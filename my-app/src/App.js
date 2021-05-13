@@ -1,28 +1,19 @@
-import { createStore } from 'redux';
+import React from 'react';
+
+// import MoviesContainer from './store/movies/components/MoviesContainer';
+import MoviesContainerSecond from './store/movies/components/MoviesContainerSecond';
+import ActorsContainer from './store/actors/components/ActorsContainer';
 
 import './App.css';
 
-const initialState = {
-  movies: [
-    'Rambo III', 'Hakerzy', 'Matrix'
-  ]
-};
-
-const movies = (state = initialState, action) => {
-  switch(action.type) {
-    default:
-      return state
-  }
-};
-
-const store = createStore(movies);
-window.store = store;
 
 const App = () => {
 
   return (
     <div className="App">
-      123
+      {/* <MoviesContainer/> */}
+      <MoviesContainerSecond/>
+      <ActorsContainer/>
     </div>
   );
 }
